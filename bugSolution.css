@@ -1,0 +1,9 @@
+/* Solution: Use explicit pixel values or other absolute units where possible to avoid ambiguity with percentages and relative units inside calc(). Ensure that the parent container has defined dimensions if using relative units. */
+.container {
+  width: 300px; /* Explicit width for the parent container */
+}
+
+.element {
+  width: calc(50% - 20px); /* More predictable results when using explicit pixels */
+  background-color: lightblue;
+}
